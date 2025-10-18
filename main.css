@@ -1,0 +1,158 @@
+body {
+  background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');       /* Rasm manzili */
+  background-size: cover;                    /* Ekranni to‘liq qoplaydi */
+  background-position: center center;        /* Markazga joylashadi */
+  background-repeat: no-repeat;              /* Takrorlanmaydi */
+  background-attachment: fixed;  
+}
+.kirish{
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    border: 0;
+    margin: auto;
+   background: rgba(0, 128, 0, 0.3);         /* Yashil rang + shaffoflik */
+  backdrop-filter: blur(3px);              /* Xiralashtirish darajasi */
+  -webkit-backdrop-filter: blur(10px);      /* Safari uchun */
+  position: relative;
+
+
+;
+
+}
+.res{
+    background: rgba(252, 251, 251, 0.822);         /* Yashil rang + shaffoflik */
+
+  color: blue;
+}
+.t1{
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 2px solid  rgba(148, 139, 139, 0.91);
+    background-color:rgba(255, 255, 255, 0.23); 
+    color: white;           
+ 
+
+  
+   
+}
+.t2{
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    margin-left: 100px;
+    border: 2px solid rgba(148, 139, 139, 0.91);
+    margin-top: 10px;
+    background-color:rgba(255, 255, 255, 0.23); 
+    color: white;  
+}
+.bt{
+    width: 300px;
+    height: 45px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.s1{
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 430px;
+    left: 310px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.344);
+}
+.s2{
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 430px;
+    left: 355px;
+    border: 0;
+     background-color: rgba(255, 255, 255, 0.344);
+}
+input::placeholder {
+  color: #ffffff;     /* Oq rang */
+  
+}
+.tqlash{
+   margin-left: 130px;
+   margin-top: 40px;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .kirish {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 128, 0, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  /* .res {
+    background: rgba(252, 251, 251, 0.85);
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+  } */
+
+  .t1, .t2, .bt {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid rgba(148, 139, 139, 0.91);
+    background-color: rgba(255, 255, 255, 0.23);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+  }
+
+  .s1, .s2 {
+    width: 35px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.344);
+  }
+
+  .s1 {
+    top: 570px;
+    left: 70%;
+  }
+
+  .s2 {
+    top: 570px;
+    left: 80%;
+  }
+
+  .tqlash {
+    margin: 30px auto;
+    text-align: center;
+  }
+}

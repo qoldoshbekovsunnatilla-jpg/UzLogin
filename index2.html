@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body {
+      background-image: url('https://zamin.uz/uploads/posts/2019-10/1572357070_04.jpg'); /* Rasm manzili */
+      background-size: cover;              /* To‘liq ekran bo‘ylab */
+      background-position: center center;  /* Markazga joylashadi */
+      background-repeat: no-repeat;        /* Takrorlanmaydi */
+      background-attachment: fixed;        /* Scrollda joyida qoladi */
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+  </style>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <iframe width="800" height="600" 
+  style="display: block; margin: auto;"
+  src="https://www.youtube.com/embed/SYsKk91ExMs?si=gyPEJz8LXAVrGLpx" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobil Video Sahifa</title>
+  <style>
+    body {
+      background-image: url('https://zamin.uz/uploads/posts/2019-10/1572357070_04.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 nisbati */
+      height: 0;
+      overflow: hidden;
+      margin-top: 60px;
+      display: block; /* Default holatda ko‘rinadi */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Kompyuter ekranlar uchun yashirish */
+    @media (min-width: 768px) {
+      .video-container {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/SYsKk91ExMs?si=gyPEJz8LXAVrGLpx" 
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body> -->
+<!-- </html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Sahifa</title>
+  <style>
+    body {
+      background-image: url('https://zamin.uz/uploads/posts/2019-10/1572357070_04.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* Kompyuter versiyasi */
+    .video-desktop {
+      display: block;
+      width: 800px;
+      height: 600px;
+      margin: 80px auto;
+    }
+
+    /* Telefon versiyasi */
+    .video-mobile {
+      display: none;
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    .video-mobile iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Ekran o‘lchamiga qarab ko‘rsatish */
+    @media (max-width: 768px) {
+      .video-desktop {
+        display: none;
+      }
+      .video-mobile {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Kompyuter versiyasi -->
+  <iframe class="video-desktop"
+    src="https://www.youtube.com/embed/SYsKk91ExMs?si=gyPEJz8LXAVrGLpx"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <!-- Telefon versiyasi -->
+  <div class="video-mobile">
+    <iframe
+      src="https://www.youtube.com/embed/SYsKk91ExMs?si=gyPEJz8LXAVrGLpx"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
